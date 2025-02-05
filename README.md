@@ -1,5 +1,5 @@
 # Snake
-Upravená verzia originálnej hry Snake, hráč ako v originálnej hre hrá za hada ktorý sa snaží získať čo najväčšie skóre jedením ovocia ktoré zväčšuje jeho dĺžku. Hra môže skončiť kolíziou do samého seba alebo do prekážky.
+Upravená verzia originálnej hry Snake, hráč ako v originálnej hre hrá za hada ktorý sa snaží získať čo najväčšie skóre jedením ovocia, ktoré zároveň zväčšuje jeho dĺžku. Hra môže skončiť kolíziou do samého seba alebo do prekážky.
 Ide o konzolovú aplikáciu spustitelnú na operačnom systéme linux (z dôvodu využitých knižníc), kde snake je na termináli reprezentovaný charakterom # , ovocie je reprezentované charakterom O a prekážky charakterom X.
 
 ## Ovládanie
@@ -21,14 +21,14 @@ Ide o konzolovú aplikáciu spustitelnú na operačnom systéme linux (z dôvodu
 1. Free play
    - na mape sa bude nachádzať len snake a náhodne rozmiestnené ovocie
 3. Obstacles
-   - na mape okrem hada a náhodne rozmiestneného ovocia budú náhodne rozmiestnené prekážky do ktorých pokiaľ hráč narazí, tak prehrá
+   - na mape okrem hada a náhodne rozmiestneného ovocia budú náhodne rozmiestnené aj prekážky do ktorých pokiaľ hráč narazí, tak prehrá
 
 ## Technické informácie
 - aplikácia je naprogramovaná v jazyku C a je spustitelná na operačnom systéme linux v CLI prostredí
 - využitie vlákien, synchronizácie a IPC prostriedkov - Socketov
 - rozdelenie na časti klient/server
 - využitie CMakeLists
-- využitie knižnice ncurses pre grafické prostredie - v oficiálnej verzii prináša úniky pamäte (Memory leaks) z dôvodu, že si alokuje viacej pamäte ako potrebuje
+- využitie knižnice ncurses pre grafické prostredie - v oficiálnej verzii prináša úniky pamäte (memory leaks) z dôvodu, že si alokuje viac pamäte ako potrebuje
 - strana server:
   - herná logika
 - strana klient:
@@ -46,7 +46,7 @@ Ide o konzolovú aplikáciu spustitelnú na operačnom systéme linux (z dôvodu
        - Následne sa spustí strana klienta pomocou príkazu: ./client
          - aby bolo možné sa pripojiť, najskôr musí byť spustená strana servera
     - Automaticky:
-       - aplikácia najskôr spusti stranu klienta a po výbere herného módu a typu mapy sa spustí aj strana servera a samotná hra (využitie fork)
+       - aplikácia najskôr spusti stranu klienta a po výbere herného módu a typu mapy sa spustí aj strana servera a samotná hra
          - Najskôr je potrebné skompilovať aplikáciu pomocou príkazu: make snake
          - Potom je možné aplikáciu spustiť príkazom: ./snake
 - aplikácia sa automaticky ukončí po skončení hry a teda aj spojenie klient - server
