@@ -51,4 +51,5 @@ Ide o konzolovú aplikáciu spustitelnú na operačnom systéme linux (z dôvodu
          - Potom je možné aplikáciu spustiť príkazom: ./snake
 - aplikácia sa automaticky ukončí po skončení hry a teda aj spojenie klient - server
 
-![snake](https://github.com/user-attachments/assets/a668878c-2a7d-4a47-8f32-7e5728dfafc2)
+![snake](https://github.com/user-attachments/assets/8aff6646-798f-496e-94c7-facee792bf4c)
+
